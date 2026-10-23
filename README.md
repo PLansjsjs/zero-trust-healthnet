@@ -1,4 +1,4 @@
-# Zero-Trust HealthNet - full implementation
+﻿# Zero-Trust HealthNet - full implementation
 
 ## Run (Windows / VS Code terminal, inside this folder)
     pip install numpy pandas scikit-learn matplotlib seaborn joblib
@@ -23,7 +23,7 @@ main.py              end-to-end system run + zero-trust vs detection-only compar
 
 ## Using a real dataset (CICIoMT2024)
 1. Download the CSV files, put them in one folder.
-2. In config.py set DATA_SOURCE = r"C:\path\to\that\folder" and K_FEATURES = 20.
+2. In config.py set DATA_SOURCE = r"C:\path\to\that\folder" and K_FEATURES = 25.
 3. python train.py ; python main.py
 The loader takes the label from LABEL_COLUMN if you set it, otherwise from the file name
 (benign / DDoS / DoS / recon / ARP-spoofing / MQTT). If your files are named differently,
